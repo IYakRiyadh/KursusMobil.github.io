@@ -165,6 +165,8 @@ button.tombol-harga:focus {
     width: 50%;
     color: black;
     text-align: center;
+    border: none;
+    background-color: #00ffff;
 }
 
 .layanan_paket {
