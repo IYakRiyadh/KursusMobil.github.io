@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- font google -->
+    <link rel="import" href="https://fonts.googleapis.com/css2" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="import" href="https://www.googleapis.com/webfonts/v1/webfonts?key=YOUR-API-KEY" />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e7b7d7740c.js" crossorigin="anonymous"></script>
+
+    <!-- My JavaScript -->
+    <link rel="stylesheet" href="maps.js" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>NAvia</title>
+    <style>
+        .mySlides {
+            display: none;
+        }
+        
+        .mapouter {
+            position: relative;
+            text-align: center;
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">NAvia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="jumbotron">
+        <div class="jumbotron text-center">
+            <h1 class="display-1">Hello, world!</h1>
+            <!-- <img src="./Assets/img/gif/ezgif.com-gif-maker.gif" alt="com-gif-maker" /> -->
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr />
+            <a class="tombol" href="#Harga_paket">
+                <i class="fas fa-chevron-down"></i>
+                <br />
+                <button class="btn btn-lg tombol-harga" href="#Harga_paket" role="button">Lihat Paket</button>
+            </a>
+        </div>
+    </section>
+
+    <section id="tentang">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#00ffff"
+          fill-opacity="0.5"
+          d="M0,256L0,96L96,96L96,288L192,288L192,288L288,288L288,288L384,288L384,160L480,160L480,224L576,224L576,160L672,160L672,32L768,32L768,192L864,192L864,96L960,96L960,192L1056,192L1056,128L1152,128L1152,320L1248,320L1248,320L1344,320L1344,128L1440,128L1440,0L1344,0L1344,0L1248,0L1248,0L1152,0L1152,0L1056,0L1056,0L960,0L960,0L864,0L864,0L768,0L768,0L672,0L672,0L576,0L576,0L480,0L480,0L384,0L384,0L288,0L288,0L192,0L192,0L96,0L96,0L0,0L0,0Z"
+        ></path>
+      </svg>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <h2 class="text-center tentang_label">Tentang</h2>
+                </div>
+            </div>
+            <div class="row tentang_kami justify-content-evenly">
+                <div class="col-md-5">
+                    <div class="label_tentang">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos veniam perspiciatis rem quae ipsa saepe architecto! Molestias ipsa in fugit dolore, perspiciatis quisquam illo odit minus error animi tempore, voluptas, consequatur nesciunt!
+                            Dolorem, repudiandae. Voluptatem asperiores iure, quaerat quisquam quas harum, cum facilis eum repellendus quis blanditiis nihil consectetur autem commodi a sit, est reprehenderit dolorum accusantium. Ratione consequuntur commodi
+                            minus voluptas a dolorem cum iusto iste. Veritatis eaque facilis quod, eum provident exercitationem, minus ipsa, vitae dolore aliquam vel maxime quidem. Nulla quam, reiciendis at laboriosam laudantium explicabo veritatis dignissimos.
+                            Perspiciatis, asperiores amet molestias voluptatibus quis nostrum nisi! Quam illum, quae fugiat labore odit libero autem tempora placeat, delectus vero ratione sed ex unde provident illo eligendi blanditiis molestias tempore
+                            consequatur quasi sunt in repellendus necessitatibus pariatur. Asperiores, officiis est ducimus fugit id quia optio similique. Nisi mollitia suscipit, at odit repellendus amet eligendi eius nobis totam inventore.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="label_tentang">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos veniam perspiciatis rem quae ipsa saepe architecto! Molestias ipsa in fugit dolore, perspiciatis quisquam illo odit minus error animi tempore, voluptas, consequatur nesciunt!
+                            Dolorem, repudiandae. Voluptatem asperiores iure, quaerat quisquam quas harum, cum facilis eum repellendus quis blanditiis nihil consectetur autem commodi a sit, est reprehenderit dolorum accusantium. Ratione consequuntur commodi
+                            minus voluptas a dolorem cum iusto iste. Veritatis eaque facilis quod, eum provident exercitationem, minus ipsa, vitae dolore aliquam vel maxime quidem. Nulla quam, reiciendis at laboriosam laudantium explicabo veritatis dignissimos.
+                            Perspiciatis, asperiores amet molestias voluptatibus quis nostrum nisi! Quam illum, quae fugiat labore odit libero autem tempora placeat, delectus vero ratione sed ex unde provident illo eligendi blanditiis molestias tempore
+                            consequatur quasi sunt in repellendus necessitatibus pariatur. Asperiores, officiis est ducimus fugit id quia optio similique. Nisi mollitia suscipit, at odit repellendus amet eligendi eius nobis totam inventore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#00ffff"
+          fill-opacity="0.5"
+          d="M0,288L0,160L96,160L96,96L192,96L192,256L288,256L288,160L384,160L384,64L480,64L480,64L576,64L576,64L672,64L672,128L768,128L768,192L864,192L864,96L960,96L960,160L1056,160L1056,64L1152,64L1152,32L1248,32L1248,160L1344,160L1344,256L1440,256L1440,320L1344,320L1344,320L1248,320L1248,320L1152,320L1152,320L1056,320L1056,320L960,320L960,320L864,320L864,320L768,320L768,320L672,320L672,320L576,320L576,320L480,320L480,320L384,320L384,320L288,320L288,320L192,320L192,320L96,320L96,320L0,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Section Awal Paket Harga -->
+    <section id="Harga_paket">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center harga_label">Harga Kursus</h2>
+                </div>
+            </div>
+            <div class="row layanan_paket justify-content-evenly">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">Header</div>
+                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="img" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button href="#" class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">Header</div>
+                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="img" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button href="#" class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">Header</div>
+                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="img" />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button href="#" class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#00ffff"
+          fill-opacity="0.5"
+          d="M0,288L0,160L96,160L96,96L192,96L192,256L288,256L288,160L384,160L384,64L480,64L480,64L576,64L576,64L672,64L672,128L768,128L768,192L864,192L864,96L960,96L960,160L1056,160L1056,64L1152,64L1152,32L1248,32L1248,160L1344,160L1344,256L1440,256L1440,320L1344,320L1344,320L1248,320L1248,320L1152,320L1152,320L1056,320L1056,320L960,320L960,320L864,320L864,320L768,320L768,320L672,320L672,320L576,320L576,320L480,320L480,320L384,320L384,320L288,320L288,320L192,320L192,320L96,320L96,320L0,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Section Paket Harga -->
+
+    <!-- Section Galery -->
+    <section id="galery">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">Galery</h2>
+                </div>
+            </div>
+            <div class="row Galery justify-content-evenly">
+                <div class="col-md-5 pb-4">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#Modal1">
+                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img" style="border-radius: 12px" alt="img1" />
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 pb-4">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#Modal2">
+                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img" style="border-radius: 12px" alt="img2" />
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#Modal3">
+                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img" style="border-radius: 12px" alt="img3" />
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#Modal4">
+                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img" style="border-radius: 12px" alt="img4" />
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#00ffff"
+          fill-opacity="0.5"
+          d="M0,288L0,160L96,160L96,96L192,96L192,256L288,256L288,160L384,160L384,64L480,64L480,64L576,64L576,64L672,64L672,128L768,128L768,192L864,192L864,96L960,96L960,160L1056,160L1056,64L1152,64L1152,32L1248,32L1248,160L1344,160L1344,256L1440,256L1440,320L1344,320L1344,320L1248,320L1248,320L1152,320L1152,320L1056,320L1056,320L960,320L960,320L864,320L864,320L768,320L768,320L672,320L672,320L576,320L576,320L480,320L480,320L384,320L384,320L288,320L288,320L192,320L192,320L96,320L96,320L0,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Galery -->
+
+    <!-- Modal Galery -->
+    <!-- Modal1 -->
+    <div class="modal fade" tabindex="-1" id="Modal1" aria-describedby="Modal1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row fase_1 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_2 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_3 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-center justify-content-center" data-bs-dismiss="modal"><i class="fas fa-times-circle"> Close</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" tabindex="-1" id="Modal2" aria-describedby="Modal2" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row fase_1 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_2 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_3 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-center justify-content-center" data-bs-dismiss="modal"><i class="fas fa-times-circle"> Close</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade" tabindex="-1" id="Modal3" aria-describedby="Modal3" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row fase_1 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_2 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_3 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-center justify-content-center" data-bs-dismiss="modal"><i class="fas fa-times-circle"> Close</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal4 -->
+    <div class="modal fade" tabindex="-1" id="Modal4" aria-describedby="Modal4" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row fase_1 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_2 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fase_3 justify-content-center mx-auto">
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 galery-item">
+                                <div class="card">
+                                    <a style="text-decoration: none; color: #000" href="./Assets/img/biaya-kursus-mobil-2.jpg">
+                                        <img src="./Assets/img/biaya-kursus-mobil-2.jpg" class="card-img-top" alt="..." />
+                                        <div class="card-body">
+                                            <p class="card-text" style="text-decoration: none">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-center justify-content-center" data-bs-dismiss="modal"><i class="fas fa-times-circle"> Close</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Modal4 -->
+    <!-- End Modal -->
+
+    <!-- Section Kontak -->
+    <section id="kontak">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="label_section text-center">Kontak Kami</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-2">
+                <div class="col-md-12">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputtext3" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputtext3" placeholder="Nama Lengkap" />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputtext3" class="col-sm-2 col-form-label">Pesan</label>
+                            <div class="col-sm-10">
+                                <textarea name="textarea" id="textarea" class="col-sm-12" rows="10" placeholder="Tulis Pesan Anda"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3 justify-content-end text-end">
+                            <div class="col-sm-1">
+                                <button type="submit" class="btn btn-primary text-end justify-content-end">Kirim</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Kontak -->
+
+    <!-- Awal Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row mt-5 pt-5">
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-center">Lokasi</h4>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=kota%20surabaya&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://googlemapsembedcodegenerator.com"></a>
+                            <a href="https://123moviesz.nl"></a>
+                        </div>
+                    </div>
+                    <p><i class="fas fa-map-marked-alt"></i> Jl. Ahmad Yani No. 25, Surabaya, Kota Surabaya, Jawa Timur 60111</p>
+                </div>
+                <div class="col-md-8">
+                    <h5 class="text-center">Sosial Media</h5>
+                    <div class="sosmed">
+                        <a href="http://"><i class="fab fa-instagram-square"></i></a>
+                        <a href="http://"><i class="fab fa-whatsapp-square"></i></a>
+                        <a href="http://"><i class="fab fa-youtube-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+    <!-- sesi copyright -->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+    </div>
+    <!-- Akhir copyright -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="./Assets/js/scripts.js"></script>
+
+    <!-- my script -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName('mySlides');
+            var dots = document.getElementsByClassName('dot');
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' active';
+        }
+    </script>
+
+    <!-- maps -->
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places&v=weekly" async></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
