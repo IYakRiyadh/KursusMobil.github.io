@@ -321,11 +321,17 @@ h2 {
 #footer .col-md-4 p {
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-top: -35px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+}
+
+#footer p {
+    margin-top: -35px;
     text-align: justify;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 200;
+    font-style: normal;
 }
 
 #footer .col-md-8 .sosmed {
